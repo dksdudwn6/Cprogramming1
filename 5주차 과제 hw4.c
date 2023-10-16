@@ -4,20 +4,20 @@
 
 int is_prime(int num) {
     if (num <= 1) {
-        return 0; // 1 ÀÌÇÏÀÇ ¼ıÀÚ´Â ¼Ò¼ö°¡ ¾Æ´Ô
+        return 0; // 1 ì´í•˜ì˜ ìˆ«ìëŠ” ì†Œìˆ˜ê°€ ì•„ë‹˜
     }
     for (int i = 2; i * i <= num; i++) {
         if (num % i == 0) {
-            return 0; // numÀÌ i·Î ³ª´©¾î ¶³¾îÁö¸é ¼Ò¼ö°¡ ¾Æ´Ô
+            return 0; // numì´ ië¡œ ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ë©´ ì†Œìˆ˜ê°€ ì•„ë‹˜
         }
     }
-    return 1; // ¼Ò¼öÀÓ
+    return 1; // ì†Œìˆ˜ì„
 }
 
 int main() {
     int number;
 
-    printf("¾çÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+    printf("ì–‘ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
     scanf("%d", &number);
 
     if (is_prime(number)) {
